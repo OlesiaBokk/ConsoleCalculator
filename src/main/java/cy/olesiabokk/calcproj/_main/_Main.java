@@ -1,16 +1,16 @@
 package cy.olesiabokk.calcproj._main;
 
-import cy.olesiabokk.calcproj.entity.Entities;
+import cy.olesiabokk.calcproj.entity.InputReader;
 import cy.olesiabokk.calcproj.service.ResultWriterService;
 import cy.olesiabokk.calcproj.util.Calculator;
 
 public class _Main {
     public static void main(String[] args) {
         System.out.println("Enter Math operator. Use +, -, * or /");
-        char operator = Entities.getOperator();
+        char operator = InputReader.getOperator();
         System.out.println("Enter 2 numbers");
-        double firstNum = Entities.getNum();
-        double secondNum = Entities.getNum();
+        double firstNum = InputReader.getNum();
+        double secondNum = InputReader.getNum();
         double result = 0;
         String operatorName = "";
         if (operator == '+') {
@@ -25,7 +25,7 @@ public class _Main {
         } else if (operator == '/') {
             if (secondNum == 0) {
                 System.out.println("Divide by zero is UNACCEPTABLE (c) Lemongrab \n Please, enter another number");
-                secondNum = Entities.getNum();
+                secondNum = InputReader.getNum();
             }
             operatorName = "Division";
             result = Calculator.divide(firstNum, secondNum);
