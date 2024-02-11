@@ -2,6 +2,6 @@
 /shelf/
 /workspace.xml
 .idea
-
+*.iml
 # Project exclude paths
 /out/
