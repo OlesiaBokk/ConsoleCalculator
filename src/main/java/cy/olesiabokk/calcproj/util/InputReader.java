@@ -1,4 +1,4 @@
-package cy.olesiabokk.calcproj.entity;
+package cy.olesiabokk.calcproj.util;
 
 import java.util.Scanner;
 

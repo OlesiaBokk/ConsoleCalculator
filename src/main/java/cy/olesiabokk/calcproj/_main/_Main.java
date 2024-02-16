@@ -1,6 +1,6 @@
 package cy.olesiabokk.calcproj._main;
 
-import cy.olesiabokk.calcproj.entity.InputReader;
+import cy.olesiabokk.calcproj.util.InputReader;
 import cy.olesiabokk.calcproj.service.ResultWriterService;
 import cy.olesiabokk.calcproj.util.Calculator;
 
